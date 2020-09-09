@@ -13,6 +13,9 @@
 		675450982508E4DE0038B8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675450962508E4DE0038B8EC /* Main.storyboard */; };
 		6754509A2508E4E00038B8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675450992508E4E00038B8EC /* Assets.xcassets */; };
 		6754509D2508E4E00038B8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6754509B2508E4E00038B8EC /* LaunchScreen.storyboard */; };
+		675450A52508E6FF0038B8EC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675450A42508E6FF0038B8EC /* Extensions.swift */; };
+		675450A92508F8DA0038B8EC /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 675450A72508F8DA0038B8EC /* dog.png */; };
+		675450AA2508F8DA0038B8EC /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 675450A82508F8DA0038B8EC /* cat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,10 @@
 		675450992508E4E00038B8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6754509C2508E4E00038B8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6754509E2508E4E00038B8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		675450A42508E6FF0038B8EC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		675450A62508EDC80038B8EC /* NFC test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NFC test.entitlements"; sourceTree = "<group>"; };
+		675450A72508F8DA0038B8EC /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		675450A82508F8DA0038B8EC /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +63,13 @@
 		6754508F2508E4DE0038B8EC /* NFC test */ = {
 			isa = PBXGroup;
 			children = (
+				675450A62508EDC80038B8EC /* NFC test.entitlements */,
 				675450902508E4DE0038B8EC /* AppDelegate.swift */,
 				675450922508E4DE0038B8EC /* SceneDelegate.swift */,
 				675450942508E4DE0038B8EC /* ViewController.swift */,
+				675450A42508E6FF0038B8EC /* Extensions.swift */,
+				675450A82508F8DA0038B8EC /* cat.png */,
+				675450A72508F8DA0038B8EC /* dog.png */,
 				675450962508E4DE0038B8EC /* Main.storyboard */,
 				675450992508E4E00038B8EC /* Assets.xcassets */,
 				6754509B2508E4E00038B8EC /* LaunchScreen.storyboard */,
@@ -125,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675450AA2508F8DA0038B8EC /* cat.png in Resources */,
+				675450A92508F8DA0038B8EC /* dog.png in Resources */,
 				6754509D2508E4E00038B8EC /* LaunchScreen.storyboard in Resources */,
 				6754509A2508E4E00038B8EC /* Assets.xcassets in Resources */,
 				675450982508E4DE0038B8EC /* Main.storyboard in Resources */,
@@ -141,6 +154,7 @@
 				675450952508E4DE0038B8EC /* ViewController.swift in Sources */,
 				675450912508E4DE0038B8EC /* AppDelegate.swift in Sources */,
 				675450932508E4DE0038B8EC /* SceneDelegate.swift in Sources */,
+				675450A52508E6FF0038B8EC /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +298,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NFC test/NFC test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CPYT3A73TA;
 				INFOPLIST_FILE = "NFC test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mauro.NFC-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,9 +318,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "NFC test/NFC test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CPYT3A73TA;
 				INFOPLIST_FILE = "NFC test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mauro.NFC-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
